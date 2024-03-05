@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://glmyfvynw47j"]
+
+[node name="obstacle" type="Sprite2D"]
