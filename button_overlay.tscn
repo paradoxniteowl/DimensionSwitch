@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn7lvyc0w2ku3"]
+
+[ext_resource type="Script" path="res://button_overlay.gd" id="1_78o14"]
+
+[node name="button_overlay" type="CanvasLayer"]
+script = ExtResource("1_78o14")
+
+[node name="blacklight_button" type="Button" parent="."]
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 188.0
+offset_bottom = 63.0
+text = "TOGGLE BLACKLIGHT"
+
+[connection signal="pressed" from="blacklight_button" to="." method="_on_blacklight_button_pressed"]

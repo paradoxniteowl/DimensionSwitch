@@ -1,3 +1,6 @@
+Camera2D
+Button
+CanvasLayer
 TileMap
 Sprite2D
 CharacterBody2D

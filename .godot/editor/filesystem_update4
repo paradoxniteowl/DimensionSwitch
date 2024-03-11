@@ -1,2 +1,9 @@
-res://blacklight_world.tscn
+res://button_overlay.gd
+res://button_overlay.tscn
 res://normal_world.tscn
+res://blacklight_world.tscn
+res://normal_world.gd
+res://blacklight_world.gd
+res://player.tscn
+res://global.gd
+res://player.gd
