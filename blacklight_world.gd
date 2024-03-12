@@ -1,7 +1,6 @@
 extends Node2D
 
 @onready var player = $TileMap/player
-var normal_world.player_position = player.position
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

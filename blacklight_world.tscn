@@ -41,6 +41,5 @@ layer_0/tile_data = PackedInt32Array(0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 1, 0, 4, 1, 0
 
 [node name="player" parent="TileMap" instance=ExtResource("5_52vel")]
 position = Vector2(293, 88)
-scale = Vector2(0.24, 0.24)
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/player"]
