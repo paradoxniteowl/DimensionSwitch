@@ -1,10 +1,8 @@
 res://normal_world.tscn
-res://normal_world.gd
-res://player.gd
-res://player.tscn
-res://global.gd
-res://blacklight_world.gd
-res://button_overlay.gd
 res://blacklight_world.tscn
 res://obstacle.tscn
+res://player.tscn
 res://button_overlay.tscn
+res://button_overlay.gd
+res://global.gd
+res://normal_world.gd
