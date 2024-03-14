@@ -4,5 +4,5 @@ res://obstacle.tscn
 res://player.tscn
 res://button_overlay.tscn
 res://button_overlay.gd
-res://global.gd
+res://blacklight_world.gd
 res://normal_world.gd
