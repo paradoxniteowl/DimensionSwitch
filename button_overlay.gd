@@ -1,11 +1,12 @@
 extends CanvasLayer
 
+'''
 @onready var current_scene = get_tree().current_scene
 @onready var normalwld = preload("res://normal_world.tscn")
 @onready var normalwld_player = $normal_world/TileMap/player
 @onready var blklitewld = $blacklight_world
 @onready var blklitewld_player = $blacklight_world/TileMap/player
-
+'''
 func _ready():
 	print(normalwld)
 

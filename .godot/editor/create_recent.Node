@@ -1,7 +1,12 @@
-Button
-Camera2D
+ColorRect
 CollisionShape2D
+Area2D
+TextEdit
+Panel
+CanvasModulate
 Sprite2D
+Camera2D
+TileMap
+Button
 CharacterBody2D
 CanvasLayer
-TileMap

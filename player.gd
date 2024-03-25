@@ -4,6 +4,9 @@ class_name Player
 
 const SPEED = 300.0
 
+func _ready():
+	add_to_group("Player")
+
 func _physics_process(delta):
 	# As good practice, you should replace UI actions with custom gameplay actions
 	if Input.is_action_just_pressed("ui_up"):

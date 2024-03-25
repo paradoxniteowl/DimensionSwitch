@@ -1,20 +1,17 @@
 extends Node2D
 
-@onready var player_position = $TileMap/player
-const TILE_TEXTURES = ["res://normal_set.tres", "res://blacklight_set.tres"]
-var tile = 0
+#@onready var tilemap = get_node("normal_map")
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
+const TEXTURES = ["res://normal_set.tres", "res://blacklight_set.tres"]
 
+var map = 0
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if Input.is_action_just_pressed("ui_accept"):
+		if map > 0:
+			map += 1
+		else:
+			map -= 1
+		var texture = load(TEXTURES[map])
+		%normal_map.tile_set.set_tileset(texture)
 
-
-func _on_change_light_pressed():
-	tile = (tile + 1)%2
-	var texture = load(TILE_TEXTURES[tile])
-	$TileMap.tile_set.get_source(1).texture = texture

@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://drimmsrh5tr58"]
+
+[ext_resource type="Script" path="res://Area2D.gd" id="1_bhcvi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cpp5c"]
+size = Vector2(140, 68)
+
+[node name="tilemapbutton" type="Sprite2D"]
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 144.0
+offset_bottom = 71.0
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_right = 142.0
+offset_bottom = 68.0
+text = "TOGGLE WORLD"
+
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource("1_bhcvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(73, 35)
+shape = SubResource("RectangleShape2D_cpp5c")
+
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
