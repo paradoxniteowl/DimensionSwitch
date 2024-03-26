@@ -1,12 +1,13 @@
-ColorRect
+CanvasLayer
+CanvasGroup
 CollisionShape2D
 Area2D
 TextEdit
 Panel
-CanvasModulate
 Sprite2D
+ColorRect
+CanvasModulate
 Camera2D
 TileMap
 Button
 CharacterBody2D
-CanvasLayer

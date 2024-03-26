@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdwk4wjhtkbm4"]
+
+[ext_resource type="Script" path="res://blacklightbuttonarea.gd" id="1_ahaor"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2w0hv"]
+size = Vector2(145, 73)
+
+[node name="blacklightbutton" type="Sprite2D"]
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = -1
+anchor_right = 145.0
+anchor_bottom = 75.0
+
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 0
+offset_right = 145.0
+offset_bottom = 72.0
+text = "TOGGLE WORLD"
+
+[node name="blacklightbuttonarea" type="Area2D" parent="."]
+script = ExtResource("1_ahaor")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="blacklightbuttonarea"]
+position = Vector2(73.5, 36.5)
+shape = SubResource("RectangleShape2D_2w0hv")
+
+[connection signal="body_entered" from="blacklightbuttonarea" to="blacklightbuttonarea" method="_on_body_entered"]

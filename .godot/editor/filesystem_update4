@@ -1,10 +1,12 @@
-res://Area2D.gd
-res://tilemapbutton.tscn
+res://blacklightworld.tscn
 res://normal_set.tres
 res://blacklight_set.tres
+res://blacklightbuttonarea.gd
+res://blacklightbutton.tscn
 res://normal_world.tscn
 res://obstacle.tscn
 res://player.tscn
 res://button_overlay.tscn
-res://blacklightworld.tscn
+res://tilemapbutton.tscn
 res://player.gd
+res://blacklightworld.gd

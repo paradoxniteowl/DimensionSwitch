@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711382331
+::res://::1711467367
 Area2D.gd::GDScript::-1::1711382118::0::1::::<>Area2D<>::
-blacklightworld.tscn::PackedScene::6116861320354710285::1711382196::0::1::::<><>::uid://cca8p7hqxs1iw::::res://blacklight_set.tres<>uid://cn6x0koivkx3w::::res://player.tscn
+blacklightworld.tscn::PackedScene::6116861320354710285::1711383204::0::1::::<><>::uid://cca8p7hqxs1iw::::res://blacklight_set.tres<>uid://cn6x0koivkx3w::::res://player.tscn
 blacklight_set.tres::TileSet::4915251194651409486::1711381657::0::1::::<><>::uid://b7uwhojce5tcq::::res://block-1.png.png<>uid://dkwesoltfq2kn::::res://black_grass.png<>uid://ds4prugpc32w8::::res://black_path.png
 black_grass.png::CompressedTexture2D::7906842563500661821::1709833999::1709833999::1::::<><>::
 black_path.png::CompressedTexture2D::8483470365240665689::1709833999::1709833999::1::::<><>::
@@ -15,7 +15,7 @@ grass.png::CompressedTexture2D::274505354047848439::1709833029::1709833029::1:::
 icon.svg::CompressedTexture2D::824331443978767419::1709660527::1709660535::1::::<><>::
 normal_set.tres::TileSet::6990197478198450533::1711381657::0::1::::<><>::uid://c01reatgcnb40::::res://block.png<>uid://dfarp6m3pioxh::::res://path.png<>uid://d58ce6d8c37h::::res://grass.png<>uid://db3h620pawmqy::::res://door.png
 normal_world.gd::GDScript::-1::1710519309::0::1::::<>Node2D<>::
-normal_world.tscn::PackedScene::7931780431687099498::1711382196::0::1::::<><>::res://normal_world.gd<>uid://c6udscbybeljx::::res://normal_set.tres<>uid://drimmsrh5tr58::::res://tilemapbutton.tscn<>uid://cn6x0koivkx3w::::res://player.tscn
+normal_world.tscn::PackedScene::7931780431687099498::1711383208::0::1::::<><>::res://normal_world.gd<>uid://c6udscbybeljx::::res://normal_set.tres<>uid://drimmsrh5tr58::::res://tilemapbutton.tscn<>uid://cn6x0koivkx3w::::res://player.tscn
 obstacle.tscn::PackedScene::444612976256132221::1711382196::0::1::::<><>::
 path.png::CompressedTexture2D::7511266893109144189::1709833029::1709833029::1::::<><>::
 player.gd::GDScript::-1::1711382118::0::1::::Player<>CharacterBody2D<>::
