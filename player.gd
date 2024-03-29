@@ -22,3 +22,8 @@ func _physics_process(delta):
 	elif Input.is_action_just_released("ui_left") or Input.is_action_just_released("ui_right"):
 		velocity.x = 0
 	move_and_slide()
+
+
+func _on_finishlvl_1_body_entered(body):
+	if body.is_in_group("Player"):
+		get_tree().change_scene_to_file("res://win.tscn")

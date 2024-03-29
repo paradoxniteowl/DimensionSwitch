@@ -28,3 +28,5 @@ position = Vector2(499, 30)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="finishlvl1"]
 position = Vector2(1144.75, 132.75)
 shape = SubResource("RectangleShape2D_nqfyb")
+
+[connection signal="body_entered" from="finishlvl1" to="TileMap/player" method="_on_finishlvl_1_body_entered"]

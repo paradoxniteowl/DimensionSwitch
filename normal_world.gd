@@ -15,3 +15,8 @@ func _process(delta):
 		var texture = load(TEXTURES[map])
 		%normal_map.tile_set.set_tileset(texture)
 
+
+
+func _on_area_2d_body_entered(body):
+	if body.is_in_group("Player"):
+		print("You can't get through the door! There must be some way to move it...")
