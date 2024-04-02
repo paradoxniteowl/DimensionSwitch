@@ -1,12 +1,9 @@
-res://win.tscn
+res://normal_world.tscn
 res://normal_set.tres
 res://blacklight_set.tres
-res://win.gd
-res://normal_world.tscn
+res://blacklightworld.tscn
 res://obstacle.tscn
 res://player.tscn
-res://blacklightworld.tscn
 res://tilemapbutton.tscn
 res://blacklightbutton.tscn
-res://normal_world.gd
-res://player.gd
+res://win.tscn
