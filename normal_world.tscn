@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dlahjage8gx7o"]
+[gd_scene load_steps=7 format=3 uid="uid://dlahjage8gx7o"]
 
 [ext_resource type="Script" path="res://normal_world.gd" id="1_gp18g"]
 [ext_resource type="TileSet" uid="uid://c6udscbybeljx" path="res://normal_set.tres" id="2_tl4h4"]
 [ext_resource type="PackedScene" uid="uid://drimmsrh5tr58" path="res://tilemapbutton.tscn" id="4_p6cl1"]
+[ext_resource type="AudioStream" uid="uid://bqbw5ummssy1m" path="res://grasscrunch.mp3" id="4_qdf2l"]
 [ext_resource type="PackedScene" uid="uid://cn6x0koivkx3w" path="res://player.tscn" id="5_x41ld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5nai2"]
@@ -24,6 +25,11 @@ position = Vector2(298, 89)
 [node name="Camera2D" type="Camera2D" parent="normal_map/player"]
 zoom = Vector2(3, 3)
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="normal_map/player"]
+position = Vector2(-1241.67, -370.833)
+scale = Vector2(4.16667, 4.16667)
+stream = ExtResource("4_qdf2l")
+
 [node name="tilemapbutton" parent="." instance=ExtResource("4_p6cl1")]
 position = Vector2(519, 32)
 
@@ -32,5 +38,9 @@ position = Vector2(519, 32)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1144.25, 135.5)
 shape = SubResource("RectangleShape2D_5nai2")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+autostart = true
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
