@@ -20,3 +20,7 @@ func _process(delta):
 func _on_area_2d_body_entered(body):
 	if body.is_in_group("Player"):
 		print("You can't get through the door! There must be some way to move it...")
+
+
+func _on_timer_timeout():
+	get_tree().change_scene_to_file("res://lose.tscn")
